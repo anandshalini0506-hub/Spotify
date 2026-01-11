@@ -8,7 +8,7 @@ body{
 }
 
 nav{
-    font-family: "Lobster", sans-serif;
+    font-family: "Ubuntu",sans-serif;
 }
 
 nav ul{
@@ -35,4 +35,19 @@ nav ul li{
     padding: 0 12px;
 }
 
+.container{
+    height:75vh;
+}
 
+.bottom{
+    height:125px;
+    background-color: black;
+    position:sticky;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#progressbar{
+    width:30vw;
+}
