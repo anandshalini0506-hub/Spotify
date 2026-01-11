@@ -36,16 +36,37 @@ nav ul li{
 }
 
 .container{
-    height:75vh;
+    height:72vh;
+    background-color: black;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    width:75%;
+    margin: 23px auto;
+    display:flex;
+    border-radius: 12px;
+    padding:12px;
+    background-image:url(assets/images/ganeshji.jpg) ;
+    background-repeat: no-repeat;
+    background-position: right ;
 }
 
 .bottom{
-    height:125px;
+    height:130px;
     background-color: black;
+    color:white;
+    bottom:0;
     position:sticky;
     display:flex;
-    justify-content:center;
-    align-items: center;
+    justify-content:center; /*bcoz flex-direction:column, aligns items vertically*/
+    align-items: center; /*aligns items horizontally*/
+    flex-direction:column; /*tells which axis is main*/
+}
+
+.icons{
+    margin-top:20px;
+}
+.icons i{
+    cursor: pointer;
 }
 
 #progressbar{
