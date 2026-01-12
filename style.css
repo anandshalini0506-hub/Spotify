@@ -45,11 +45,23 @@ nav ul li{
     display:flex;
     border-radius: 12px;
     padding:12px;
-    background-image:url(assets/images/ganeshji.jpg) ;
+    background-image:url(assets/images/song.jpg) ;
     background-repeat: no-repeat;
     background-position: right ;
 }
+.songItem{
+    height:100px;
+    display:flex;
+    background-color: lavender;
+    color:black;
+    width:120%;
+    justify-content:space-between;
+    align-items:center;
+}
 
+.songItem i{
+    font-size: 20px;
+}
 .bottom{
     height:130px;
     background-color: black;
