@@ -50,17 +50,34 @@ nav ul li{
     background-position: right ;
 }
 .songItem{
-    height:100px;
+    height:40px;
     display:flex;
     background-color: lavender;
     color:black;
-    width:120%;
+    width:165%;
     justify-content:space-between;
     align-items:center;
+    border-radius: 34px;
+    margin:12px 0;
+    padding-right: 15px;
 }
 
 .songItem i{
     font-size: 20px;
+}
+
+.songItem img{
+    width:35px;
+    margin:15px 23px;
+    border-radius:50px;
+}
+
+.timestamp{
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 50px;
 }
 .bottom{
     height:130px;
@@ -74,6 +91,10 @@ nav ul li{
     flex-direction:column; /*tells which axis is main*/
 }
 
+.songInfo{
+    position:absolute;
+    left:32vw;
+}
 .icons{
     margin-top:20px;
 }
