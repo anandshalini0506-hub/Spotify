@@ -86,7 +86,7 @@ nav ul li{
 }
 
 .songItemContainer{
-    margin-top: 50px;
+    margin-top: 20px;
     padding:min(5rem ,8%);
 }
 .bottom{
@@ -119,6 +119,8 @@ nav ul li{
     width: clamp(35px, 7vw, 50px);
     height: auto;
     display: block;
+    opacity: 0;
+    transition:opacity 1s ease-in;
 }
 .icons{
     display: flex;
@@ -127,11 +129,16 @@ nav ul li{
 .icons i{
     font-size: clamp(20px, 5vw, 30px);
     cursor: pointer;
+    color:white;
+    font-size: 28px;
+    display: inline-block; /* must be visible */
 }
 
 #progressbar{
     width: clamp(220px, 85vw, 600px);
+    cursor:pointer;
 }
+
 @media (max-width: 768px) {
     .container {
         background-image: none;
