@@ -22,12 +22,14 @@ nav ul{
 .brand img{
     width:44px;
     padding:0 8px;
+    max-width: 100%;
+    height:auto;
 }
 
 .brand{
     display:flex;
     font-weight:bolder;
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
     text-align: center;
 }
 
@@ -40,26 +42,31 @@ nav ul li{
     background-color: black;
     color:white;
     font-family: 'Times New Roman', Times, serif;
-    width:75%;
+    width:min(90%,1100px);
     margin: 23px auto;
     display:flex;
     border-radius: 12px;
-    padding:12px;
+    padding:clamp(12px, 4vw, 40px);
     background-image:url(assets/images/song.jpg) ;
     background-repeat: no-repeat;
     background-position: right ;
+    height:auto;
+    min-height: 60vh;
+    background-size: contain;
+
 }
 .songItem{
     height:40px;
     display:flex;
     background-color: lavender;
     color:black;
-    width:165%;
+    width:100%;
     justify-content:space-between;
     align-items:center;
     border-radius: 34px;
     margin:12px 0;
     padding-right: 15px;
+    font-size: clamp(0.85rem, 2vw, 1rem);
 }
 
 .songItem i{
@@ -70,6 +77,8 @@ nav ul li{
     width:35px;
     margin:15px 23px;
     border-radius:50px;
+    max-width: 100%;
+    height:auto;
 }
 
 .timestamp{
@@ -78,30 +87,53 @@ nav ul li{
 
 .songItemContainer{
     margin-top: 50px;
+    padding:min(5rem ,8%);
 }
 .bottom{
-    height:130px;
+    width:100%;
     background-color: black;
     color:white;
     bottom:0;
-    position:sticky;
+    position:fixed;
+    left:0;
     display:flex;
     justify-content:center; /*bcoz flex-direction:column, aligns items vertically*/
     align-items: center; /*aligns items horizontally*/
     flex-direction:column; /*tells which axis is main*/
+    padding:clamp(10px, 2vw, 20px);
+    gap: 12px;
+    z-index: 1000;    
 }
 
 .songInfo{
-    position:absolute;
-    left:32vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: clamp(8px, 2vw, 12px);
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    text-align: center;
+
+}
+
+.songInfo img {
+    width: clamp(35px, 7vw, 50px);
+    height: auto;
+    display: block;
 }
 .icons{
-    margin-top:20px;
+    display: flex;
+    gap: clamp(12px, 4vw, 20px);
 }
 .icons i{
+    font-size: clamp(20px, 5vw, 30px);
     cursor: pointer;
 }
 
 #progressbar{
-    width:30vw;
+    width: clamp(220px, 85vw, 600px);
+}
+@media (max-width: 768px) {
+    .container {
+        background-image: none;
+    }
 }
