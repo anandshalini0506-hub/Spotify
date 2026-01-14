@@ -21,28 +21,28 @@
             <div class="songItemContainer">
                 <div class="songItem">
                     <img src="assets/images/ganeshji.jpg" alt="1" >
-                    <span>Deva Shree Ganesha</span>
-                    <span class="songListPlay"><span class="timestamp">05:34<i class="fa-solid fa-3x fa-circle-play" font-size="1.0 rem"></i></span></span>
+                    <span class="songName">Deva Shree Ganesha</span>
+                    <span class="songListPlay"><span class="timestamp">05:34<i id="0" class="fa-solid songItemPlay fa-3x fa-circle-play" font-size="1.0 rem"></i></span></span>
                 </div>
                 <div class="songItem">
                     <img src="assets/images/love_stereo.jpg" alt="1" >
-                    <span>Love Stereo Again</span>
-                    <span class="songListPlay"><span class="timestamp">03.15<i class="fa-solid fa-3x fa-circle-play" font-size="1.0 rem"></i></span></span>
+                    <span class="songName">Love Stereo Again</span>
+                    <span class="songListPlay"><span class="timestamp">03.15<i id="1" class="fa-solid songItemPlay fa-3x fa-circle-play" font-size="1.0 rem"></i></span></span>
                 </div>
                 <div class="songItem">
                     <img src="assets/images/ishqmanzoor.jpg" alt="1" >
-                    <span>Ishq Manzoor</span>
-                    <span class="songListPlay"><span class="timestamp">03.22<i class="fa-solid fa-3x fa-circle-play" font-size="1.0 rem"></i></span></span>
+                    <span class="songName">Ishq Manzoor</span>
+                    <span class="songListPlay"><span class="timestamp">03.22<i id="2" class="fa-solid songItemPlay fa-3x fa-circle-play" font-size="1.0 rem"></i></span></span>
                 </div>
                 <div class="songItem">
                     <img src="assets/images/ishqshava.jpg" alt="1" >
-                    <span>Ishq Shava</span>
-                    <span class="songListPlay"><span class="timestamp">04.30<i class="fa-solid fa-3x fa-circle-play" font-size="1.0 rem"></i></span></span>
+                    <span class="songName">Ishq Shava</span>
+                    <span class="songListPlay"><span class="timestamp">04.30<i id="3" class="fa-solid songItemPlay fa-3x fa-circle-play" font-size="1.0 rem"></i></span></span>
                 </div>
                 <div class="songItem">
                     <img src="assets/images/mauja.jpg" alt="1" >
-                    <span>Muaja hi Mauja</span>
-                    <span class="songListPlay"><span class="timestamp">03.18<i class="fa-solid fa-3x fa-circle-play" font-size="1.0 rem"></i></span></span>
+                    <span class="songName">Mauja hi Mauja</span>
+                    <span class="songListPlay"><span class="timestamp">03.18<i id="4" class="fa-solid songItemPlay fa-3x fa-circle-play" font-size="1.0 rem"></i></span></span>
                 </div>
             </div>
         </div>
@@ -52,12 +52,12 @@
         <input type="range" name="range" id="progressbar" value="0" min="0" max="100">
         <div class="icons">
         <!--fontawesome icons-->
-        <i class="fa-solid fa-3x fa-backward-step"></i>
+        <i class="fa-solid fa-3x fa-backward-step" id="previous"></i>
         <i class="fa-solid fa-3x fa-circle-play" id="masterPlay"></i>
-        <i class="fa-solid fa-3x fa-forward-step"></i>
+        <i class="fa-solid fa-3x fa-forward-step" id="next"></i>
         </div>
         <div class="songInfo">
-            <img src="assets/gif/audio-8777_256.gif" width="42px" id="gif">Let us Listen!!!
+            <img src="assets/gif/audio-8777_256.gif" width="42px" id="gif"><span id="masterSongName">Deva Shree Ganesha</span>
         </div>
     </div>
     <script src="script.js"></script>

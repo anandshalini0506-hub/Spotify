@@ -75,10 +75,10 @@ nav ul li{
 
 .songItem img{
     width:35px;
+    height:35px;
+    object-fit: cover;
+    border-radius:50%;
     margin:15px 23px;
-    border-radius:50px;
-    max-width: 100%;
-    height:auto;
 }
 
 .timestamp{
