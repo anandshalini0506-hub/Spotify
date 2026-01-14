@@ -87,7 +87,7 @@ nav ul li{
 
 .songItemContainer{
     margin-top: 20px;
-    padding:min(5rem ,8%);
+    padding:min(1rem ,8%);
 }
 .bottom{
     width:100%;
@@ -120,7 +120,7 @@ nav ul li{
     height: auto;
     display: block;
     opacity: 0;
-    transition:opacity 1s ease-in;
+    transition:opacity 0.4s ease-in;
 }
 .icons{
     display: flex;
