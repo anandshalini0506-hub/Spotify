@@ -72,7 +72,15 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
         gif.style.opacity=1;
         masterPlay.classList.remove('fa-circle-play');
         masterPlay.classList.add('fa-circle-pause');
+        audioElement.addEventListener('pause', () => {
+            e.currentTarget.classList.remove('fa-circle-pause');
+            e.currentTarget.classList.add('fa-circle-play');
+        });
     })
+})
+
+audioElement.addEventListener('ended',()=>{
+    document.getElementById('next').click();
 })
 
 document.getElementById('next').addEventListener('click',()=>{
