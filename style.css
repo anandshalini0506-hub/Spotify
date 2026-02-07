@@ -34,7 +34,11 @@ nav ul{
 }
 
 nav ul li{
-    padding: 0 12px;
+    padding: 5px 12px;
+    margin-top:20px;
+    margin-bottom:5px;
+    align-items:center;
+    justify-content: center;
 }
 
 .container{
