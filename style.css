@@ -31,6 +31,9 @@ nav ul{
     font-weight:bolder;
     font-size: clamp(1.2rem, 2.5vw, 1.6rem);
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin:5px 5px;
 }
 
 nav ul li{
